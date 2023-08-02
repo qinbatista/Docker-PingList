@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build the Docker image
-        run: docker build -t qinbatista/pinglist
+        run: docker build -t qinbatista/pinglist .
 
       - name: Login to Docker Hub
         uses: docker/login-action@v2
